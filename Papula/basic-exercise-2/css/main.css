@@ -23,11 +23,13 @@ body{
     color: white;
     background-color: grey;
     padding: 4px 16px;
+    margin: 10px 0;
     border-radius: 5px;
 }
 
 .navlinks:hover{
     background-color: red;
+    -webkit-transform: scale(1.2);
 }
 
 .container{
@@ -37,7 +39,7 @@ body{
 .resource-container{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 50%;
     height: 50vh;
     margin-top: 1em;
@@ -59,6 +61,7 @@ body{
 
 .resource-links:hover{
     background-color: red;
+    -webkit-transform: scale(1.2);
     
 }
 
