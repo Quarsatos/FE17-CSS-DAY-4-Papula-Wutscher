@@ -29,7 +29,7 @@ body{
 
 .navlinks:hover{
     background-color: red;
-    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .container{
@@ -61,7 +61,7 @@ body{
 
 .resource-links:hover{
     background-color: red;
-    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     
 }
 
