@@ -164,3 +164,50 @@ img {
     grid-row-start: 6;
     grid-row-end: 9;
 }
+
+/* Try out Animation within Grid */
+
+/* Cubes */ 
+
+.scene {
+    width:20em;
+    height:30em;
+    perspective:55em;
+  }
+
+  .cube {
+    width:100%;
+    height:100%;
+    translate: 35px 50px;
+    position:relative;
+    transform-style:preserve-3d;
+  }
+
+  .cube:hover {
+    animation: 5s spinning 2 ;
+  }
+  
+  @keyframes spinning {
+    from  { transform: translateZ(-5em) rotateY(0deg);   }
+    to    { transform: translateZ(-5em) rotateY(360deg); }
+  }
+
+.face-sides {
+    width:111%;
+    height:115%;
+    position:absolute;
+    background-color:rgba(3, 121, 255, 0.5);
+    
+}
+
+.face-top-bottom {
+    width:100%;
+    height:50%;
+    position:absolute;
+    background-color:rgba(3, 121, 255, 0.5);
+}
+
+  .front  { transform: rotateY(0deg) translateZ(11em); }
+  .right  { transform: rotateY(90deg) translateZ(11em);  }
+  .left   { transform: rotateY(-90deg) translateZ(11em); }
+  .back   { transform: rotateY(180deg) translateZ(11em); }
