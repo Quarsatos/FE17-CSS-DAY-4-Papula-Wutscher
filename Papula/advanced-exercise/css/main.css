@@ -8,13 +8,36 @@ body{
     margin: 0 auto;
     margin-top: 1em;
 }
-
+.pic-1{
+    grid-area: eins;
+}
+.pic-2{
+    grid-area: zwei;
+}
+.pic-3{
+    grid-area: drei;
+}
+.pic-4{
+    grid-area: vier;
+}
+.pic-5{
+    grid-area: fünf;
+}
+.pic-6{
+    grid-area: sechs;
+}
 .container{
     display: grid;
     grid-template-columns: (8,1fr);
     grid-template-rows: (8,1fr);
     gap: 20px;
     border: 1px solid red;
+    grid-template-areas: 
+    "eins eins eins eins zwei zwei zwei zwei"
+    "eins eins eins eins zwei zwei zwei zwei"
+    "drei drei vier vier zwei zwei zwei zwei"
+    "drei drei vier vier zwei zwei zwei zwei"
+    "fünf fünf fünf fünf sechs sechs sechs sechs";
 }
 
 img{
@@ -23,7 +46,10 @@ img{
     object-fit: fill;
 }
 
-.pic-1{
+
+
+/* .pic-1{
+    
     grid-area: 1/1/2/5;
 }
 .pic-2{
@@ -44,7 +70,7 @@ img{
 
 .pic-6{
     grid-area: 3/5/4/9 ;
-}
+} */
 
 
 
